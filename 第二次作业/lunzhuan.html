@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>图片轮播</title>
+        <style>
+        #box{
+            width: 400px;	
+            height:300px;   
+            margin: 20px;    
+            overflow: hidden;
+        }
+        .trans_image_box {    
+            /* width: 1600px;    */
+            height: 300px;    
+            -webkit-transition: all 1s ease-in-out;    
+            -moz-transition: all 1s ease-in-out;    
+            -o-transition: all 1s ease-in-out;    
+            transition: all 1s ease-in-out;
+        }
+        #img {    
+            width: 400px;	
+            height:300px;    
+            float: left;
+        }
+        .trans_image_trigger {    
+            padding-top: 10px;    
+            text-align: center;
+        }
+        </style>
+    </head> 
+    <body>
+        <div id="box">    
+            <div id="transImageBox" class="trans_image_box"> 
+                <img id="img" src="images/banner_01.jpg" border="0" />        
+                <img id="img" src="images/2015122111165657.jpg" border="0" />        
+                <img id="img" src="images/20151221111650209.jpg" border="0" />        
+                <img id="img" src="images/20151221111730654.jpg" border="0" />        
+                <img id="img" src="images/banner_02.jpg" border="0" />        
+                <img id="img" src="images/banner_03.jpg" border="0" /> 
+                <img id="img" src="images/banner_04.jpg" border="0" />
+                <img id="img" src="images/banner_05.jpg" border="0" />         
+            </div>
+        </div>
+        <div id="transImageTrigger" class="trans_image_trigger">        
+            <a href="#1">1</a>　
+            <a href="#2">2</a>　
+            <a href="#3">3</a>　
+            <a href="#4">4</a>
+            <a href="#5">5</a>
+            <a href="#6">6</a>
+            <a href="#7">7</a>
+        </div>
+        <script>
+            window.onload = (function() {    
+                var getid = function(id) {        
+                    return document.getElementById(id);   
+                };	    
+                var oBox = getid("transImageBox");	
+                //返回的oTrigger是a标签的数组    
+                var oTrigger = getid("transImageTrigger").getElementsByTagName("a");	
+                //lTrigger是oTrigger数组的长度    
+                var lTrigger = oTrigger.length;            
+                if (oBox && lTrigger) {        
+                    for (var i = 0; i<lTrigger; i++) {            
+                        oTrigger[i].onclick = function() {				
+                            //将href中的#换成空字符串，这样才能取到1,2,3,4这样的数字                
+                            var index = Number(this.href.replace(/.*#/g, "")) || 1;					
+                            //根据取出来的index来判断需要margin-left多少像素                
+                            oBox.style.marginLeft = (1 - index) * 400 + "px";                
+                            return false;            
+                            };	        
+                        }    
+                    }})();
+        </script>
+</body>
+</html>
+
+
+
+
+

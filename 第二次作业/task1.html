@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        #img{
+            /* width: 100px; */
+            height: 150px;
+            position: absolute;
+            left:0px;
+        }
+    </style>
+    <script src="animate.js"></script>
+</head>
+<body>
+    <img id="img" src="images/5b9615c5a51b5.jpg" alt="">
+
+
+   <script>
+          var box=document.getElementById("img");
+            // 匀速运动
+         box.onclick=function(){
+             animate(box,{left:500,top:300,opacity:20});
+        //     var timer=setInterval(function(){
+        //         var now=parseInt(getStyle(box,"left"));
+                    
+        //         if(now==500){
+        //             clearInterval(timer);
+        //         }else{
+        //             box.style.left=now+1+"px";
+        //         }
+        //     },30);
+
+
+            //变速运动  
+            // var timer=setInterval(function(){
+            //     var now=parseInt(getStyle(box,"left"));
+            //     // var speed=Math.ceil((500-now)/6);
+            //     var speed=(500-now)/6;
+            //     speed=speed>0?Math.ceil(speed):Math.floor(speed);
+            //     if(now==500){
+            //         clearInterval(timer);
+            //     }else{
+            //         box.style.left=now+speed+"px";
+            //     }
+            // },30);
+
+         }
+
+        // function getStyle(obj,attr){
+        //     if(obj.currentStyle){
+        //         return obj.currentStyle[attr];
+        //     }else{
+        //         return getComputedStyle(obj,null)[attr];
+        //     }
+        // }
+    </script>
+</body>
+</html>
