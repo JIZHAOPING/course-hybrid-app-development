@@ -1,0 +1,19 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let sourse of sourses">
+      <a [routerLink]="['/course',sourse.id]">
+        <img src="{{sourse.images}}" alt="">
+        <h5>{{sourse.className}}</h5>
+        
+        <div class="span">
+            <span>{{sourse.text}}</span>
+            <div class="span1">
+              <span>课时&nbsp;{{sourse.classhour}}</span>
+              <span class="right">人数&nbsp;{{sourse.num}}</span>
+            </div>
+               
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

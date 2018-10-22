@@ -1,0 +1,46 @@
+.container{
+    width:1000px;
+    margin:0 auto;
+}
+.container li{
+    width:230px;
+    height: 250px;
+    float:left;
+    margin-left:10px;
+    margin-top:20px;
+    border: 1px solid #ccc;
+}
+.pic1{
+    width:230px;
+    height: 130px;
+}
+.container li p{
+    margin-top:20px;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
+.span{
+    margin-top:40px;
+    margin-left:20px;
+}
+.span span{
+    font-size:12px;
+    color:#222;
+}
+.span img{
+    width:20px;
+    height: 20px;
+    padding-right: 5px;
+    margin-bottom: -6px;
+}
+.span .button{
+    float: right;
+    margin-right: 10px;
+    /* width:50px; */
+}
+.span .button button{
+    width:50px;
+    background-color:#f90;
+    color:#fff;
+}

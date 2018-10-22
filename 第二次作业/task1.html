@@ -22,7 +22,9 @@
           var box=document.getElementById("img");
             // 匀速运动
          box.onclick=function(){
-             animate(box,{left:500,top:300,opacity:20});
+             animate(box,{left:500,top:300,opacity:20},function(){
+                 console.log(1);
+             });
         //     var timer=setInterval(function(){
         //         var now=parseInt(getStyle(box,"left"));
                     
