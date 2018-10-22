@@ -1,0 +1,36 @@
+.container{
+    width:1000px;
+    margin:0 auto;
+}
+.container li{
+    width:230px;
+    height: 250px;
+    float:left;
+    margin-left:10px;
+    margin-top:20px;
+    border: 1px solid #ccc;
+}
+li a{
+    color:#ccc;
+    
+}
+.container li a img{
+    width:230px;
+    height:130px;
+}
+h5{
+    margin:10px 5px;
+    color:#333;
+}
+.container li .span{
+    /* height:80px; */
+    font-size:14px;
+    margin:5px 5px;
+}
+.span .span1{
+    /* margin-left:10px; */
+    margin-top:5px;
+}
+.span1 .right{
+    float: right;
+}
