@@ -1,0 +1,30 @@
+<div id="container">
+  <div class="top">
+    <div class="inside">
+      <div class="title">
+        <img src="assets/images/tongbuke.jpg" alt=""><a href="">同步课&nbsp;/&nbsp;{{course?.courseName}}</a> 
+      </div>
+      <div class="fenshu">
+        <img src="assets/images/fen.jpg" alt="">
+      </div>
+      <div class="list">
+        <ul>
+          <li ><a href="">简介</a></li>
+          <li ><a href="">互动</a></li>
+          <li><a [routerLink]="['./tong',course?.id]">任务{{course?.task}}</a></li>
+          <li><a href="" >成员{{course?.person}}</a></li>
+
+          <!-- [class.active]="flag"
+          [ngClass]="{'active':true}"
+          [style.color]="'red'"
+          [ngStyle]="{'color':'red','font-size':'50px'}" -->
+
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  <div class="bottom">
+    <router-outlet></router-outlet>
+  </div>
+</div>

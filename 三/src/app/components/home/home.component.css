@@ -1,0 +1,108 @@
+.content{
+    width:1000px;
+    margin:0 auto;
+    /* margin-top:20px; */
+}
+.left{
+    width:150px;
+    height:auto;
+    float:left;
+    margin-right: 50px;
+}
+.left .top{
+    height:250px;
+    margin-bottom: 10px;
+}
+.left .top img{
+    width:150px;
+}
+.left .top .name{
+    text-align: center;
+    font-size:18px;
+    color:#666;
+}
+.left .top .fans{
+    margin-top:10px;
+}
+.left .top .fans a{
+    text-align: center;
+    float:left;
+    margin-left:20px;
+    padding-right:15px;
+    font-size: 18px;
+    color:#666;
+}
+.left .top .fans a .count{
+    font-size:24px;
+}
+.left .bottom{
+    margin-top:10px;
+}
+.left .bottom ul li{
+    height:30px;
+    padding-top:10px;
+    /* margin-top:20px; */
+}
+.left .bottom li a{
+    text-align: center;
+    font-size: 16px;
+    color:#333;
+}
+.left .bottom li:hover{
+    
+    background-color: #ffece6;
+}
+.left .bottom a:hover{
+    color:#ff6e3d;
+}
+.left .bottom li span{
+    float: right;
+}
+.left .bottom img{
+    width:20px;
+    height: 20px;
+    margin-bottom: -5px;
+}
+.right{
+    margin-top:50px;
+}
+.right .right-up{
+    height:35px;
+    margin-top:50px;
+}
+.right .list img{
+    width:20px;
+    height:20px;
+    margin-bottom:-5px;
+}
+.right .list{
+    margin-top:10px;
+}
+.right li{
+    margin-right:20px;
+    float:left;
+}
+.right li a{
+    font-size:18px;
+    color:#333;
+}
+.right li a:hover{
+    color:#ff6e3d;
+}
+.right .input{
+    float: right;
+}
+.right .input input{
+    width:200px;
+    height:24px;
+    border-radius: 5px;
+}
+.right .input button{
+    width:50px;
+    height:28px;
+    border-radius: 5px;
+}
+.right .right-down{
+    margin-top:100px;
+    text-align: center;
+}
