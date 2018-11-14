@@ -1,0 +1,45 @@
+page-a {
+    ion-content{
+        background-image: url(../assets/imgs/dl.png);
+        background-size: cover;
+        .title{
+            margin-top:30%;
+            color: #fff;
+            .p1{
+                font: 45px '楷体';
+                margin: 0 auto;
+            }
+            .p2{
+                font-size: 6px;
+                letter-spacing: -1px;
+                margin: 0 auto;
+            }
+        }
+        .box{
+            margin-top:20%;
+            ion-item{
+                background: transparent;
+                ion-icon{
+                    color:#d1dad8;
+                }
+                ion-input{
+                    border: 1px solid #bec0c2;
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+                input::-webkit-input-placeholder {
+                    color: #a2a6a7;
+                    font-size: 14px;
+                    
+                }
+               
+            }
+        }
+        .dl{
+            margin: 10%;
+            line-height: 50px;
+            background-image: url(../assets/imgs/dlh.png)
+        }
+        
+    }
+}

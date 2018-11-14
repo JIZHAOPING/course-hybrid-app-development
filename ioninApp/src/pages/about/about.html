@@ -1,0 +1,72 @@
+<ion-header no-border>
+  <ion-navbar >
+      <ion-searchbar>
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- 轮播图 -->
+  <!-- <ion-slides (ionSlideDidChange)="change()" pager="true" autoplay="1000" loop="true" class="sli">
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides> -->
+
+
+  <!-- 商城 -->
+
+  <!-- banner -->
+  <div>
+    <img src="assets/imgs/scbanner.png" alt="">
+  </div>
+
+  <!-- 导航栏 -->
+  <ul class="navList">
+      <li *ngFor="let item of arr;let idx=index" (click)="isClick(idx)" [class.first]="isActive==idx">{{item}}</li>
+  </ul>
+  <div [ngSwitch]='isActive'>
+    <div *ngSwitchCase="0">
+      <!-- 沙发 -->
+        <div class="text" text-center>
+          <img src="../assets/imgs/sf.png" alt="">
+          &nbsp;&nbsp;沙发&nbsp;&nbsp;
+          <img src="../assets/imgs/sf.png" alt="">
+          <button end>
+            <ion-icon ios="ios-funnel-outline" md="md-funnel"></ion-icon>      
+          </button>  
+          
+        <div>
+          
+        </div>
+    </div>
+      <!-- 图片列表 -->
+      <ul class="imglist">
+        <li><img src="../assets/imgs/sc1.png" alt=""></li>
+        <li><img src="../assets/imgs/sc2.png" alt=""></li>
+        <li class="img3">
+          <div ><p class="t1" text-center>罗德蒙简约植绒布艺沙发</p><p class="t2" text-center>RMB 6500</p></div>
+        </li>
+        <li><img src="../assets/imgs/sc4.png" alt=""></li>
+      </ul>
+
+    </div>
+    <div *ngSwitchCase="1"></div>
+    <div *ngSwitchCase="2"></div>
+    <div *ngSwitchCase="3"></div>
+    <div *ngSwitchCase="4"></div>
+  </div>
+
+  
+  
+</ion-content>

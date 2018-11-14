@@ -1,0 +1,27 @@
+page-add {
+    ion-content{
+        background-image: url(../assets/imgs/addbc.png);
+        .container{
+            width: 80%;
+            margin: 40% auto;
+            div{
+                margin-bottom: 10%;
+                width: 50%;
+                float: left;
+                img{
+                    margin:0 15px 10% 20px;
+                    width: 70%;
+                    border-radius: 50%;
+                }
+                p{
+                    margin: 0;
+                }
+                .p1{
+                    font-size: 20px;
+                    margin-bottom: 10%;
+                }
+            }
+            
+        }
+    }
+}
